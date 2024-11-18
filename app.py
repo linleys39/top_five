@@ -6,6 +6,7 @@ app = Flask(__name__)
 submissions = []
 
 @app.route("/", methods=["GET", "POST"])
+#Home function
 def home():
     global submissions
     if request.method == "POST":
